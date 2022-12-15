@@ -22,6 +22,7 @@ while running:
 
     # Draw a solid blue circle in the center
     pygame.draw.circle(screen, (0, 0, 255), (250, 250), 75)
+    pygame.draw.rect(screen,(20,135,100),(400, 400, 20, 20), 75)
 
     pygame.display.update()
 
