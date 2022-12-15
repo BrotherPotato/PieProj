@@ -42,6 +42,6 @@ while running:
 
 
 
-        #Tick is just a measure of time in PyGame. clock. tick(40) means that for every second at most 40 frames should pass.
-        clock.tick(30)
+    #Tick is just a measure of time in PyGame. clock. tick(40) means that for every second at most 40 frames should pass.
+    clock.tick(30)
 pygame.quit()
