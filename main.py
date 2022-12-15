@@ -13,7 +13,7 @@ font = pygame.font.Font('freesansbold.ttf', 32)
 text = font.render('GAMING', True, (0, 255, 0), (0, 0, 128))
 textRect = text.get_rect()
 # set the center of the rectangular object.
-textRect.center = (WINDOW_WIDTH/2,WINDOW_HEIGHT/2)
+textRect.center = (WINDOW_WIDTH/2,WINDOW_HEIGHT/3)
 
 clock = pygame.time.Clock()
 #create an object to help track time. Times in pygame are represented in 
