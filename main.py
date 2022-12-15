@@ -44,8 +44,11 @@ while running:
 
     pygame.display.update()
 
+    
 
-
-    #Tick is just a measure of time in PyGame. clock. tick(40) means that for every second at most 40 frames should pass.
-    clock.tick(60)
+    #Tick is just a measure of time in PyGame. clock. tick(40) means that for every second at most 40 frames should pass. 
+    # This is useful for games, because you don't want the game to run faster on a faster computer.
+    # If you don't call clock. tick() at all, the program will run as fast as possible.
+    # FPS = 1000 / 17 = 58.82 frames per second
+    clock.tick(17)
 pygame.quit()
