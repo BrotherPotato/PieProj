@@ -19,10 +19,6 @@ screen = pygame.display.set_mode(WINDOW_DIMENSIONS)
 # (the events are removed from the internal event queue). If you press the close button of the window, 
 # than the causes the QUIT event and you'll get the event by for event in pygame
 
-#event. get() handles the internal events an retrieves a list of external events 
-# (the events are removed from the internal event queue). If you press the close button of the window, 
-# than the causes the QUIT event and you'll get the event by for event in pygame
-
 # Run until the user asks to quit
 running = True
 while running:
