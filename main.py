@@ -8,6 +8,12 @@ WINDOW_DIMENSIONS = WINDOW_WIDTH, WINDOW_HEIGHT
 pygame.init()
 pygame.display.set_caption("Game")
 
+#Font for the game
+font = pygame.font.Font('freesansbold.ttf', 32)
+text = font.render('GAMING', True, (0, 255, 0), (0, 0, 128))
+textRect = text.get_rect()
+# set the center of the rectangular object.
+textRect.center = (WINDOW_WIDTH/2,WINDOW_HEIGHT/2)
 
 clock = pygame.time.Clock()
 #create an object to help track time. Times in pygame are represented in 
@@ -34,11 +40,12 @@ while running:
     # Draw a solid blue circle in the center
     pygame.draw.circle(screen, (0, 0, 255), (250, 250), 75)
     pygame.draw.rect(screen,(20,135,100),(400, 400, 20, 20), 75)
+    screen.blit(text, textRect)
 
     pygame.display.update()
 
 
 
     #Tick is just a measure of time in PyGame. clock. tick(40) means that for every second at most 40 frames should pass.
-    clock.tick(30)
+    clock.tick(60)
 pygame.quit()
